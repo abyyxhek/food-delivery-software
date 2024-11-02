@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>big cart</title>
+    <link rel="stylesheet" href="big_cafe.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="small_container"></div>
+        <center>
+            <div class="order-form">
+                <div class="header">
+                    <h1>Chicken Biriyani</h1>
+                    <a href="../index.html"><button class="close-button">X</button></a>
+                </div>
+                <br><hr><br>
+                <div class="inside_class">
+                    <div class="image_div"><img src="https://th.bing.com/th/id/OIP.CO3A6Pqr-B1qdRQsvgaLpAHaHa?rs=1&pid=ImgDetMain" alt="Chicken_Biriyani"></div>
+                    <div class="txt_content">
+                        <p>Delicious Chicken Biriyani for a full breakfast .It is a famous Indian subcontinent dish that is popular around the world. Biryani is prepared from basmati rice mixed with several spices and cooked in a special way. Chicken Biryani, Mutton Biryani and Veg Biryani are some of the variants of this delicious dish.</p>
+                        <div class="toppings">
+                            <h3>Rs:150</h3>
+                        </div>
+                        <div class="special-note">
+                            <h4>Additional toppings needed</h4>
+                            <textarea placeholder="Special notes if any.. eg: Need extra sauce.."></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="down_cart">
+                    <div class="quantity">
+                        <button class="quantity-button" id="decrease">-</button>
+                        <input type="text" id="quantity" value="1">
+                        <button class="quantity-button" id="increase">+</button>
+                    </div>
+                    <button class="add-to-cart" id="calculate">Add To Cart</button>
+                </div>
+                <div class="total-price" id="totalPrice" style="display:none;">
+                    <p>Total Price: <span id="totalAmount"></span></p>
+                    <p>Tax: <span id="taxAmount"></span></p>
+                    <p>Delivery Charges: <span id="deliveryAmount"></span></p>
+                    <p>Grand Total: <span id="grandTotal"></span></p>
+                </div>
+                <div class="buttons" id="buttons" style="display:none;">
+                    <a href="../index.html"><button id="continue">Continue Adding Food</button></a>
+                    <a href="purchase.html"><button id="checkout">Checkout</button></a> 
+                </div>
+            </div>
+        </center>
+    </div>
+    <script>
+        document.getElementById('decrease').addEventListener('click', function() {
+            let quantity = document.getElementById('quantity').value;
+            if (quantity > 1) {
+                document.getElementById('quantity').value = --quantity;
+            }
+        });
+        document.getElementById('increase').addEventListener('click', function() {
+            let quantity = document.getElementById('quantity').value;
+            document.getElementById('quantity').value = ++quantity;
+        });
+        document.getElementById('calculate').addEventListener('click', function() {
+            let quantity = parseInt(document.getElementById('quantity').value);
+            let basePrice = 150.00; // Base price of Chicken Biriyani
+            let toppingPrice = 0;
+            document.querySelectorAll('.topping:checked').forEach(function(topping) {
+                toppingPrice += parseFloat(topping.value);
+            });
+            let totalPrice = (basePrice + toppingPrice) * quantity;
+            let tax = totalPrice * 0.1; // Assuming tax is 10%
+            let delivery = 5.00; // Assuming flat delivery charge of Rs.5.00
+            let grandTotal = totalPrice + tax + delivery;
+            document.getElementById('totalAmount').innerText = 'Rs.' + totalPrice.toFixed(2);
+            document.getElementById('taxAmount').innerText = 'Rs.' + tax.toFixed(2);
+            document.getElementById('deliveryAmount').innerText = 'Rs.' + delivery.toFixed(2);
+            document.getElementById('grandTotal').innerText = 'Rs.' + grandTotal.toFixed(2);
+            document.getElementById('totalPrice').style.display = 'block';
+            document.getElementById('buttons').style.display = 'block';
+        });
+        document.getElementById('continue').addEventListener('click', function() {
+            alert('Continue adding food functionality to be implemented.');
+        });
+        document.getElementById('checkout').addEventListener('click', function() {
+            window.location.href = 'checkout.html';
+        });
+    </script>
+</body>
+</html>

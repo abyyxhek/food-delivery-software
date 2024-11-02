@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    overflow:hidden;
+   
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+
+    background-color: #ccc;
+    border-radius: 50%;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.website-name {
+    flex: 1;
+    margin-left: 10px;
+    color: rgb(240, 128, 17);
+    font-size: 20px;      
+    font-weight: bold;
+}
+
+.search {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
+.bell-icon, .profile-icon {
+    margin-left: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    
+
+}
+.profile-icon {
+    background-color: #e4dddd;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+
+    height: 635px;
+    background-color: #fff;
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+}
+
+.sidebar nav ul li {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 55px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding:20px 40px 20px 45px;
+    border-radius:15px;
+  
+
+}
+.sidebar nav ul li a{
+    text-decoration:none;
+    color:black;
+    
+}
+.sidebar nav ul li:hover{
+    color:rgb(240, 128, 17);
+    background-color: #e4dddd;
+}
+
+.support-btn {
+    margin-top: auto;
+    padding: 10px;
+    border: none;
+    background-color: rgb(240, 128, 17);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.support-btn a{
+    text-decoration:none;
+    color:white;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.dashboard-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.time-filter {
+    margin-right: 10px;
+    padding: 10px;
+    border: none;
+    background-color:rgb(240, 128, 17);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    width:100px;
+}
+
+.location-btn, .date-btn {
+    margin-left: auto;
+    padding: 10px;
+    margin:0px;
+    
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.location-btn{
+    margin-left: 600px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.stat {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+    width: 22%;
+}
+
+.stat-title {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.stat-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.chart {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width:1200px;
+    height:400px;
+}
+.small_container{
+    display: flex;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+            margin-left: 10px;
+            margin-right:10px;
+       
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            padding-top:10%;
+            background-color: #f9f9f9;
+            width: 130px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            margin-right: 20%;
+            margin-top:70%;
+            
+
+           
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+           
+        }
+        
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+       }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+          
+          
+        }
+       
+        .dropdown:hover .dropbtn {
+            color:rgb(240, 128, 17);
+        
+        }

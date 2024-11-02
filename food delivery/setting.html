@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification Settings</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+<link rel="stylesheet" href="setting.css">
+    
+</head>
+<body>
+    
+       
+   <header class="header">
+    <div class="logo"><img src="https://logodix.com/logo/1775020.jpg" width="40px" height="40px"/></div>
+    <div class="website-name">Feast Factory</div>
+    <input type="text" class="search" placeholder="search">
+    <div class="header-icons">
+        <div class="bell-icon">🔔</div>
+        <div class="dropdown">
+            <span class="dropbtn"><img src="https://icon-library.com/images/website-icon-png-black/website-icon-png-black-27.jpg" width="20px" height="20px"></span>
+            
+            <div class="dropdown-content">
+                <a href="#">Feedback</a>
+                <a href="#">Contact us</a>
+                <a href="#">Log out</a>
+            </div>
+        </div>
+        <div class="profile-icon"></div>
+       
+    </div>
+</header>
+
+<div class="sidebar">
+       
+    <a href="admin_dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+    <a href="admin_manage_orders.html"><i class="fas fa-receipt"></i> Manage Orders</a>
+    <a href="admin_manage_menu.html"><i class="fas fa-utensils"></i> Manage Menu</a>
+    <a href="admin_manage_users.html"><i class="fas fa-users"></i> Manage Users</a>
+    <a href="setting.html"><i class="fas fa-cogs"></i> Settings</a>
+   
+</div>
+
+<section>
+    <center><h2>Settings</h2></center>
+    <div class="container">
+        
+        <form>
+            <div class="setting">
+                <label for="email-notifications">Email Notifications</label>
+                <select id="email-notifications">
+                    <option value="enabled">Enabled</option>
+                    <option value="disabled">Disabled</option>
+                </select>
+            </div>
+            
+            <div class="setting">
+                <label for="sms-notifications">SMS Notifications</label>
+                <select id="sms-notifications">
+                    <option value="enabled">Enabled</option>
+                    <option value="disabled">Disabled</option>
+                </select>
+            </div>
+
+            <div class="setting">
+                <label for="push-notifications">Push Notifications</label>
+                <select id="push-notifications">
+                    <option value="enabled">Enabled</option>
+                    <option value="disabled">Disabled</option>
+                </select>
+            </div>
+
+            <div class="setting">
+                <label for="app-notifications">App Notifications</label>
+                <select id="app-notifications">
+                    <option value="enabled">Enabled</option>
+                    <option value="disabled">Disabled</option>
+                </select>
+            </div>
+
+            <div class="setting">
+                <label for="browser-notifications">Browser Notifications</label>
+                <select id="browser-notifications">
+                    <option value="enabled">Enabled</option>
+                    <option value="disabled">Disabled</option>
+                </select>
+            </div>
+
+            <div class="setting">
+                <label for="newsletter-subscription">Newsletter Subscription</label>
+                <select id="newsletter-subscription">
+                    <option value="enabled">Enabled</option>
+                    <option value="disabled">Disabled</option>
+                </select>
+            </div>
+
+            <div class="setting">
+                <label for="notification-frequency">Notification Frequency</label>
+                <select id="notification-frequency">
+                    <option value="immediately">Immediately</option>
+                    <option value="daily">Daily</option>
+                    <option value="weekly">Weekly</option>
+                    <option value="monthly">Monthly</option>
+                </select>
+            </div>
+
+            <button type="submit" class="update-btn">Update Notifications</button>
+        </form>
+    </div>
+</section>
+</body>
+</html>

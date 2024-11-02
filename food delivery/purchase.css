@@ -1,0 +1,236 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+
+    background-color: #ccc;
+    border-radius: 50%;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.website-name {
+    flex: 1;
+    margin-left: 10px;
+    color: rgb(240, 128, 17);
+    font-size: 20px;      
+    font-weight: bold;
+}
+
+.search {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
+.bell-icon, .profile-icon {
+    margin-left: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    
+
+}
+.profile-icon {
+    background-color: #e4dddd;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px;
+}
+        
+.billing-details,
+.order-summary {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 45%;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.checkbox-group input {
+    margin-right: 10px;
+}
+
+textarea {
+    height: 60px;
+}
+
+button {
+    background-color: rgb(240, 128, 17);
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color:rgb(240, 128, 17);
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+.order-summary .order-item,
+.order-summary .order-total,
+.order-summary .order-tax {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.order-summary .coupon {
+    margin-top: 20px;
+}
+
+.order-summary .coupon a {
+    color: rgb(240, 128, 17);
+    text-decoration: none;
+}
+
+.order-summary .coupon a:hover {
+    text-decoration: underline;
+}
+
+.order-summary .coupon input {
+    width: calc(100% - 110px);
+    margin-right: 10px;
+}
+
+.order-summary .coupon button {
+    width: 100px;
+    background-color:rgb(240, 128, 17);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.order-summary .coupon button:hover {
+    background-color:rgb(240, 128, 17);
+}
+
+.payment-method {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.payment-method img {
+    margin-left: 10px;
+}
+.coupon{
+    display:flex;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+            margin-left: 10px;
+            margin-right:10px;
+       
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            padding-top:10%;
+            background-color: #f9f9f9;
+            width: 130px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            margin-right: 20%;
+            margin-top:70%;
+            
+
+           
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+           
+        }
+        
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+       }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+          
+          
+        }
+       
+        .dropdown:hover .dropbtn {
+            color:rgb(240, 128, 17);
+        
+        }

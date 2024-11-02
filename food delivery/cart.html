@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biryani Collection</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div><img class="logo" src="https://logodix.com/logo/1775020.jpg"/></div>
+            <pre class="website_name"><b>Feast Factory</b></pre>
+        </div>
+        <nav>
+            <a href="#">Search</a>
+            <a href="../index.html#contact_us">Contact Us</a>
+            <a href="../index.html#about-section">About Us</a>
+            <a href="login.html">Login</a>
+            <div class="dropdown">
+                <span class="dropbtn">Other</span>
+                <span class="dropbtn"><img src="https://icon-library.com/images/website-icon-png-black/website-icon-png-black-27.jpg" width="10px" height="10px"></span>
+                <div class="dropdown-content">
+                    <a href="sign_up.html">Sign_up</a>
+                    <a href="#">Feedback</a>
+                    <a href="#">Log out</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="section_1">
+        <div class="inner_section">
+            <h1>Biriyani</h1>
+            <p>Savor these delicious biriyanis to brighten your day.</p>
+            <div class="filters">
+                <button onclick="filterByTime()">Less than 30 mins</button>
+                <button onclick="filterByPriceRange(300, 600)">Rs. 300-Rs. 600</button>
+                <button onclick="filterByPriceRange(0, 300)">Less than Rs. 300</button>
+                <button onclick="sortByRating()">Sort by Rating</button>
+            </div>
+        </div>
+    </section>
+    
+    <h2 class="top_res">Top Restaurants</h2>
+    <div class="top-restaurant" id="restaurant-list">
+        <div class="restaurant-item" data-price="250" data-time="45" data-rating="4.2">
+            <img src="https://www.thespruceeats.com/thmb/SalyKjzBU-K1Bv-FTFWnbd6ckjY=/2121x1414/filters:fill(auto,1)/GettyImages-639704020-5c4a63ecc9e77c00017bfebf.jpg" alt="Sharief Bhai Biryani">
+            <div class="restaurant-info">
+                <h3>Sharief Bhai Biryani</h3>
+                <p>&#9733; 4.2 • 20-25 mins</p>
+                <p>Biriyani, Kebabs, Mughlai, Arabian</p>
+                <p>Saradha college road</p>
+                <div class="offer">40% OFF UPTO ₹80</div>
+            </div>
+        </div>
+        <div class="restaurant-item" data-price="400" data-time="20" data-rating="4.5">
+            <img src="https://th.bing.com/th/id/R.d61f3706e4bc104940432912db37ddc2?rik=Dn79bCyownM8Jw&riu=http%3a%2f%2fastoriaomaha.com%2fimg%2fBIRYANIS%2fhyd%2fulava-charu-mutton-biryani2.jpg&ehk=w2UvcapDI4S4rFWYsZ5ewIyDd2naNsCpIGyoCr1dwmg%3d&risl=&pid=ImgRaw&r=0" alt="Nikaa Biryani">
+            <div class="restaurant-info">
+                <h3>Nikaa Biryani</h3>
+                <p>&#9733; 4.5 • 15-20 mins</p>
+                <p>Biriyani, Indian, Chinese</p>
+                <p>Saradha college road</p>
+            </div>
+        </div>
+        <div class="restaurant-item" data-price="550" data-time="35" data-rating="5.0">
+            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_400/ja16tqynfvkvi2dsyhz5" alt="Biryani Bazar">
+            <div class="restaurant-info">
+                <h3>Biryani Bazar</h3>
+                <p>&#9733; 5.0 • 25-30 mins</p>
+                <p>Biriyani, Chinese, South Indian, Indian</p>
+                <p>Saradha college road</p>
+            </div>
+        </div>
+        <div class="restaurant-item" data-price="300" data-time="20" data-rating="4.4">
+            <img src="https://www.keralafoodcourt.com/cdn/shop/files/fishbiriyani.jpg?v=1706566133" alt="Combo Box">
+            <div class="restaurant-info">
+                <h3>Combo Box</h3>
+                <p>&#9733; 4.4 • 20-25 mins</p>
+                <p>Chinese, Biriyani</p>
+                <p>Trichy Main Road</p>
+                <div class="offer">50% OFF UPTO ₹100</div>
+            </div>
+        </div>
+        <div class="restaurant-item" data-price="150" data-time="25" data-rating="4.1">
+            <img src="https://img.freepik.com/premium-photo/picture-mutton-biryani_871710-37984.jpg" alt="Chicken Biriyani">
+            <div class="restaurant-info">
+                <h3>Chicken Biriyani</h3>
+                <p>&#9733; 4.1 • 20-25 mins</p>
+                <p>Italian, Biriyani</p>
+                <p>Gandhipuram Main Road</p>
+            </div>
+        </div>
+    </div>
+    <div class="top-restaurant" id="restaurant-list">
+        <div class="restaurant-item" data-price="150" data-time="25" data-rating="4.1">
+            <img src="https://img.freepik.com/premium-photo/indian-biriyani_1043277-123.jpg" alt="Thalassery Biriyani">
+            <div class="restaurant-info">
+                <h3>Thalassery Biriyani</h3>
+                <p>&#9733; 4.1 • 20-25 mins</p>
+                <p>Italian, Biriyani</p>
+                <p>Gandhipuram Main Road</p>
+            </div>
+        </div>
+        <div class="restaurant-item" data-price="400" data-time="20" data-rating="4.5">
+            <img src="https://img.freepik.com/premium-photo/chicken-biriyani-using-jeera-rice-arranged-earthenware-with-raitha-grey-background_527904-8.jpg?w=826" alt="Dum Biryani">
+            <div class="restaurant-info">
+                <h3>Dum Biryani</h3>
+                <p>&#9733; 4.5 • 15-20 mins</p>
+                <p>Biriyani, Indian, Chinese</p>
+                <p>Saradha college road</p>
+            </div>
+        </div>
+        <div class="restaurant-item" data-price="300" data-time="40" data-rating="4.4">
+            <img src="https://img.freepik.com/premium-photo/kabsah-mandy-chicken-rice-set-with-spicy-sauce-salad-plate-white-wooden-background_1002979-11599.jpg" alt="Ravuthar Biriyani">
+            <div class="restaurant-info">
+                <h3>Ravuthar Biriyani</h3>
+                <p>&#9733; 4.4 • 20-25 mins</p>
+                <p>Chinese, Biriyani</p>
+                <p>Trichy Main Road</p>
+                <div class="offer">50% OFF UPTO ₹100</div>
+            </div>
+        </div>
+        <div class="restaurant-item" data-price="250" data-time="45" data-rating="4.2">
+            <img src="https://norecipes.com/wp-content/uploads/2017/05/chicken-biryani-11.jpg" alt="Ravi Bhai Biryani">
+            <div class="restaurant-info">
+                <h3>Ravi Bhai Biryani</h3>
+                <p>&#9733; 4.2 • 20-25 mins</p>
+                <p>Biriyani, Kebabs, Mughlai, Arabian</p>
+                <p>Saradha college road</p>
+                <div class="offer">40% OFF UPTO ₹80</div>
+            </div>
+        </div>
+        <div class="restaurant-item" data-price="300" data-time="40" data-rating="4.4">
+            <img src="https://i.pinimg.com/originals/5e/23/fa/5e23fa7402d8d37912e75b66e086148f.jpg" alt="Chicken Kanthari Biriyani">
+            <div class="restaurant-info">
+                <h3>Chicken Kanthari Biriyani</h3>
+                <p>&#9733; 4.4 • 20-25 mins</p>
+                <p>Chinese, Biriyani</p>
+                <p>Trichy Main Road</p>
+                <div class="offer">50% OFF UPTO ₹100</div>
+            </div>
+        </div>
+        
+        <div class="restaurant-item" data-price="550" data-time="30" data-rating="5.0">
+            <img src="https://img.freepik.com/premium-photo/dum-handi-chicken-biryani-is-prepared-earthen-clay-pot-called-haandi-popular-indian-non-vegetarian-food_466689-52231.jpg" alt="Kozhikodan Biriyani">
+            <div class="restaurant-info">
+                <h3>Kozhikodan Biriyani</h3>
+                <p>&#9733; 5.0 • 25-30 mins</p>
+                <p>Biriyani, Chinese, South Indian, Indian</p>
+                <p>Saradha college road</p>
+            </div>
+        </div>
+      
+        
+    </div>
+    <script>
+        function filterByTime() {
+            const items = document.querySelectorAll('.restaurant-item');
+            items.forEach(item => {
+                const time = parseInt(item.getAttribute('data-time'));
+                if (time > 30) {
+                    item.style.display = 'none';
+                } else {
+                    item.style.display = 'block';
+                }
+            });
+        }
+        function filterByPriceRange(min, max) {
+            const items = document.querySelectorAll('.restaurant-item');
+            items.forEach(item => {
+                const price = parseInt(item.getAttribute('data-price'));
+                if (price < min || price > max) {
+                    item.style.display = 'none';
+                } else {
+                    item.style.display = 'block';
+                }
+            });
+        }
+        function sortByRating() {
+            const container = document.getElementById('restaurant-list');
+            const items = Array.from(container.getElementsByClassName('restaurant-item'));
+            items.sort((a, b) => {
+                const ratingA = parseFloat(a.getAttribute('data-rating'));
+                const ratingB = parseFloat(b.getAttribute('data-rating'));
+                return ratingB - ratingA;
+            });
+            items.forEach(item => container.appendChild(item));
+        }
+    </script>
+</body>
+</html>

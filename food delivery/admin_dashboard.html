@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="admin_dashboard.css">
+</head>
+<body>
+   <header class="header">
+            <div class="logo"><img src="https://logodix.com/logo/1775020.jpg" width="40px" height="40px"/></div>
+            <div class="website-name">Feast Factory</div>
+            <input type="text" class="search" placeholder="search">
+            <div class="header-icons">
+                <div class="bell-icon">🔔</div>
+                <div class="dropdown">
+                    <span class="dropbtn"><img src="https://icon-library.com/images/website-icon-png-black/website-icon-png-black-27.jpg" width="20px" height="20px"></span>
+                    
+                    <div class="dropdown-content">
+                        <a href="#">Feedback</a>
+                        <a href="#">Contact us</a>
+                        <a href="#">Log out</a>
+                    </div>
+                </div>
+                <div class="profile-icon"></div>
+               
+            </div>
+        </header>
+    <div class="sidebar">
+       
+        <a href="admin_dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+        <a href="admin_manage_orders.html"><i class="fas fa-receipt"></i> Manage Orders</a>
+        <a href="admin_manage_menu.html"><i class="fas fa-utensils"></i> Manage Menu</a>
+        <a href="admin_manage_users.html"><i class="fas fa-users"></i> Manage Users</a>
+        <a href="setting.html"><i class="fas fa-cogs"></i> Settings</a>
+       
+    </div>
+    <div class="main-content">
+        <div class="upper_box">
+        <h3 style="margin-left:25px;">Order Statistics</h3>
+        <h3 style="margin-left:125px;">Site Statistics</h3>
+    </div>
+        <div class="stat-grid">
+            <div class="stat-box">
+               
+                <div>Received:<p>454<p></div>
+                <div>Processing: <p>211</p></div>
+                <div>Users: <p>4555</p></div>
+              <div>Earnings: <p>₹ 45678</p></div>
+            </div>
+            </div>
+            <div class="stat-box">
+                
+                <div>Restaurants: <p>45</p></div>
+                <div>Delivery People: <p>55</p></div>
+               
+           <div>Delivered: <p>1332</p></div>
+                <div>Cancelled: <p>211</p></div>
+        </div>
+        <div class="charts">
+            <div class="chart">
+                <h3 style="margin-left:25px;padding:10px;">Offer of the day</h3>
+                <img src="https://i.pinimg.com/originals/e1/4b/2f/e14b2fb931f819f6f5c5cf237dc7c3b4.jpg" width="400px" height="400px" style="margin-left:25px;">
+            </div>
+            <div class="chart">
+                <h3 style="margin-left:125px;padding:10px;">Combo Offers</h3>
+               <img src="https://b.zmtcdn.com/data/menus/761/19683761/95b3533cc2ed86abe88980157eec7b2c.jpg" width="800px" height="400px"  style="margin-left:125px;">
+            </div>
+            </div>
+        </div>
+       
+    
+    </div>
+</body>
+</html>
